@@ -1,67 +1,78 @@
 div.info{
    position: -webkit-sticky;
-   position: sticky;
+   position: fixed;
     top: 0;
-    background-color: palevioletred;
+    background-color: rebeccapurple;
     border: 2px solid black;
    width: 100vw;
    height: 15vh;
    box-shadow: black;
    font-size: 50px;
-   color: white;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 
 }
 
 #home{
-    background-color: purple;
-    background-repeat: no-repeat;
+    background-color: teal;
     background-size: 77%;
     background-position: left;
     color: black;
-    font: optional;
-    font-size: 20px;
+    font-size: 23px;
     height: 100%;
     width: 100%;
-    position: absolute;
+   
 }
 #me{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: purple;
     
+    background-color: rebeccapurple;
+
+  
 }
 
 
 .written-about-me{
-    border: black 2px solid;
     font-size: 25px;
-    flex: 50%;
+    background-color: rebeccapurple;
+
     
     
 }
 .images{
     flex: 50%;
 }
+.myPhoto{
+    float: right;
+    margin-top: 7%;
+    margin-right: 4%;
+}
 
 #project{
     display: flex;
     flex-direction: row;
     font-size: 20px;
+    background-color: rebeccapurple;
 }
 #experience{
     font-size: 25px;
-    background-color: purple;
+    background-color:teal;
 }
 
 #contact{
-    display: flex;
-    flex-direction: row;
-    width: 100px;
-    height: auto;
-    background-color: purple;
+    display: grid;
+    grid-template-columns: 7% 7% 7% 7%;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+#contact div{
+    margin-left: 30%;
+}
+
+.container{
+    background-color: teal;
+}
+.container .skills{
+    color: black;
 }
 
 
@@ -82,7 +93,6 @@ width: fit-content;
 
 #enter{
     display: inline;
-    margin-top: 20%;
 
 }
 
@@ -96,37 +106,55 @@ width: fit-content;
     padding: 10px;
     font-size: 10px;
     margin-left: 30%;
+    color: teal;
 }
 
 .about{
     box-shadow: black;
     padding: 10px;
+    color: teal;
     
 }
 
 .experience{
     box-shadow: black;
     padding: 10px;
+    color: teal;
     
+}
+.experiences{
+    margin-top: 0%;
+    padding-top: 3%;
 }
 
 .projects{
     box-shadow: black;
     padding: 10px;
+    color: teal;
     
 }
 
 .skills{
     box-shadow: black;
     padding: 10px;
+    color: teal;
     
 }
 
 .contact{
     box-shadow: black;
     padding: 10px;
+    color: teal;
     
 }
 main{
     width: 100%;
+}
+
+h1{
+    margin: 0%;
+}
+h2{
+    margin: 0%;
+    padding-top: 3%;
 }
