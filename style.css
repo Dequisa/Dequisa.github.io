@@ -140,7 +140,7 @@ h2{
 }
 
 
-
+/* I don't see this class applied in your index.html page! */
 .div-holder{
     display: grid;
     grid-template-columns: 7% 84% 9%;
