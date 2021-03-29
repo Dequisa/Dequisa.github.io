@@ -1,4 +1,6 @@
 
+/*I love that you found web fonts to use in your project, but they aren't used on any selector that matches DOM elements on you live site!*/
+
 .parallax{
     background-image: url("https://ak.picdn.net/shutterstock/videos/6737113/thumb/1.jpg");
     min-height: 100px;
