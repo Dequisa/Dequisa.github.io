@@ -51,7 +51,7 @@ div.info{
     display: flex;
     flex-direction: row;
     font-size: 20px;
-    background-color: rebeccapurple;
+    background-color: teal;
 }
 #experience{
     font-size: 25px;
@@ -70,6 +70,7 @@ div.info{
 
 .container{
     background-color: teal;
+    display: grid;
 }
 .container .skills{
     color: black;
