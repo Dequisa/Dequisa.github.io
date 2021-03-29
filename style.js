@@ -1,3 +1,7 @@
+// It looks like the code below was used to change inline styles when a DOM element is clicked.
+// This approach can totally work. I think it's more common to toggle whether a CSS class
+// is applied to an element. That way, you can keep all of your css code inside your css files!
+
 // document.addEventListener("DOMContentLoaded", () => {
 //     let circle = document.querySelector(".dot1")
 //     circle.addEventListener("click", () =>{
@@ -8,6 +12,9 @@
 //     })
 // })
 
+
+// I love that you started to incporporate an API into your project!
+// based on the commented out code, it looks like you had a good start here.
 
 // let mylocation = ""
 
@@ -25,7 +32,11 @@
 
 
 
-
+// Is there a way you could toggle all these dark-mode settings
+// without having to grab each DOM element individually?
+// Option 1: use querySelectorAll
+// Option 2: design your css so that applying .dark-mode to a high-up DOM node
+// will control the theme of the entire page.
 
 // function off(){
 //     var power1 = document.querySelector(".main");
@@ -67,6 +78,10 @@ function viewPoint() {
     document.getElementById("#contact").style.display = "none";
 
 }
+
+// Is there a way you could refactor the code below so that it doesn't
+// rely on the global visibleDivId variable? One way I can think to do it
+// is remove the divVisibility function, and have hideNonVisibleDivs accept the divId variable
 
 // var divs = ["home","me","experience","container","contact"];
 // var visibleDivId = null;
