@@ -11,119 +11,9 @@
     
 } 
 
-/* .info a{
-   text-align: center;
-    min-height: 50px;
-    list-style: none;
-   
- 
-} */
 
 
-/* #contact a{
-    display: block;
-    scroll-margin-left: 100%;
-    width: 40;
-    list-style: none;
-    border: solid black 2px;
-}
 
-li a:hover{
-    background-color: rgb(241, 89, 89);
-    color:  white;
-    display: inline;
-}
-
-nav ul{
-    list-style-type: none;
-    border-left: 2px solid black;
-   padding-left: 5px;
-
-}
-
-.me{
-    position: absolute;
-    margin-left: 70%;
-    text-align: left;
-    font-size: 32px;
-
-
-}
-
-
-h2{
-
-    position: absolute;
-    bottom: 30%;
-    margin-left: 30%;
-    
-    
-}
-
-
- .info{
-     background-color: rgb(42, 95, 165);
-     overflow: hidden;
-     opacity: 0.8;
-    
-     
- } */
-/* 
- .info a {
-     float: left;
-     color: #f2f2f2;
-     text-align: center;
-     padding: 14px, 16px;
-     text-decoration: none;
-     font-size: 17px;
- }
-
- .info a:hover {
-     background-color: grey;
-     color: white;
-     font-size: 22px;
- } */
-
- /* .info a.active {
-     background-color: #4caf4c;
-     color: white;
- } */
-
- /* .handle{
-     display: flex;
-     position: absolute;
-     list-style-type: none;
-     width: auto; */
-     /* margin-left: 90%; */
-     /* bottom: 10%; */
- /* } */
-
-
-/* img {
-     background-repeat: no-repeat;
-     /* border: solid black 2px; */
-     /* display: inline;
-     height: 200px;
-     width: auto;
-    
-
- }
-
-#project{
-    background-color: rgb(42, 95, 165);
-    border: 2px solid black;
-}  */
-/* #contact{
-    background-color: rgb(42, 95, 165);
-}
-
-.skills{
-    background-color: white;
-}
-.written-about-me{
-    border: solid black 2px;
-    display: inline;
-} */
 
 .container{
     border: solid black 2px;
@@ -319,12 +209,12 @@ border: 2px solid black;
     display: flex;
 }
 
-.written-about-me{
-    display: inline;
-    position: inherit;
-    background-color: white;
-    border: 2px black solid;
-    height: 300px;
+.about_me_text{
+    display: inline-block;
+     /* position: inherit; */
+    /* background-color: white; */
+    border: 2px black solid; 
+    width: 300px;
 }
 
 .image{
@@ -332,19 +222,20 @@ border: 2px solid black;
     
 }
 
-.info{
+h.info{
     text-align: end;
     margin-right: 10%;
     margin-top: -3%;
     gap: 10px;
 }
 
-.dark-mode{
-    background-color: black;
-    color: white;
+main{
+    padding: 16px; 
 }
 
-
+.sticky + main{
+    padding-top: 102px;
+  }
 
 
 

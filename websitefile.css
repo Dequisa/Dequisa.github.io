@@ -2,7 +2,7 @@ div.info{
    position: -webkit-sticky;
    position: fixed;
     top: 0;
-    background-color: rebeccapurple;
+    background-color: rgb(205, 175, 235);
     border: 2px solid black;
    width: 100vw;
    height: 15vh;
@@ -12,32 +12,42 @@ div.info{
     
 
 }
+body{
+    background-color: rgb(197, 230, 230);
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 70%;
+}
+div{
+    display: block;
+    border: 3px black solid;
+    width: 50%;
+}
+.svgImg{
+opacity: 0.8;
+}
 
 #home{
+    border: 2px black solid;
+    width: 50%;
+    display: block;
+
     background-color: teal;
     background-size: 77%;
     background-position: left;
     color: black;
-    font-size: 23px;
-    height: 100%;
-    width: 100%;
+    font-size: 18px;
+    height: auto;
+    
    
 }
-#me{
-    
-    background-color: rebeccapurple;
 
-  
-}
-
-
-.written-about-me{
-    font-size: 25px;
-    background-color: rebeccapurple;
-
-    
-    
-}
 .images{
     flex: 50%;
 }
@@ -53,34 +63,10 @@ div.info{
     font-size: 20px;
     background-color: teal;
 }
-#experience{
-    font-size: 25px;
-    background-color:teal;
-}
-
-#contact{
-    display: grid;
-    grid-template-columns: 7% 7% 7% 7%;
-    width: 100%;
-    background-color: rebeccapurple;
-}
-#contact div{
-    margin-left: 30%;
-}
 
 .container{
     background-color: teal;
     display: grid;
-}
-.container .skills{
-    color: black;
-}
-
-
-
-.never-forget{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAGnpZBLnhlXY1ZBz2CFSG21tTu1uNmCJy_g&usqp=CAU);
-width: fit-content;
 }
 
 
@@ -92,13 +78,12 @@ width: fit-content;
     font-size: 16px;
   }
 
-#enter{
-    display: inline;
 
-}
 
 #home img{
-    height: 72vh;
+    height: 20vh;
+    position: fixed;
+    opacity: 0.5;
     margin-left: 50%;
 }
 
@@ -117,20 +102,12 @@ width: fit-content;
     
 }
 
-.experience{
-    box-shadow: black;
-    padding: 10px;
-    color: teal;
-    
-}
-.experiences{
-    margin-top: 0%;
-    padding-top: 3%;
-}
+
+
 
 .projects{
     box-shadow: black;
-    padding: 10px;
+    padding: 2px;
     color: teal;
     
 }
@@ -142,20 +119,5 @@ width: fit-content;
     
 }
 
-.contact{
-    box-shadow: black;
-    padding: 10px;
-    color: teal;
-    
-}
-main{
-    width: 100%;
-}
 
-h1{
-    margin: 0%;
-}
-h2{
-    margin: 0%;
-    padding-top: 3%;
-}
+
