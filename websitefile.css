@@ -1,24 +1,68 @@
-div.info{
-   position: -webkit-sticky;
-   position: fixed;
-    top: 0;
-    background-color: rgb(205, 175, 235);
-    border: 2px solid black;
-   width: 100vw;
-   height: 15vh;
-   box-shadow: black;
-   font-size: 50px;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
-
-}
 body{
+    margin: 0%;
     background-color: rgb(197, 230, 230);
 }
+header{
+    position: relative;
+}
+.navBar{
+    position: -webkit-sticky;
+    display: block;
+   position: relative;
+   height: 16.0vh;
+    top: 0;
+    background-color: rgb(205, 175, 235);
+   margin: 0%;
+   border-top: 1px black solid;
+   border-bottom: 1px black solid;
+   padding-left: 0%;  
+}
+.navLi{
+    position: fixed;
+   box-shadow: black;
+   width: 76%;
+   display: inline;
+   margin-top: 0%;
+   font-size: 21px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   list-style: none;
+}
+.navBar h2{
+    /* display: inline; */
+    /* z-index: 1; */
+    position: absolute;
+    width: 30vw;
+   left: 20%;
+    top: 3%;
+    font-size: 40px;
+    
+}
+li{
+    display: inline;
+    padding: 3%;
+    padding-bottom: 3%;
+    float: right;
+}
+.navImg{
+    /* position: fixed; */
+    top: 0%;
+    left: 0%;
+    width: 20vw;
+    height: auto;
+    display: inline;
+    padding-top: 15;
+    z-index: 0;
+    margin-top: -4.6%;
+    margin-left: -3%;
+}
+  .navBar a:hover {
+    cursor:pointer; 
+  }
 
 .parent{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
     justify-content: space-evenly;
     width: 70%;
@@ -31,13 +75,13 @@ div{
 }
 .svgImg{
 opacity: 0.8;
+margin-left: 20%;
 }
 
 #home{
     border: 2px black solid;
     width: 50%;
     display: block;
-
     background-color: teal;
     background-size: 77%;
     background-position: left;
@@ -46,10 +90,6 @@ opacity: 0.8;
     height: auto;
     
    
-}
-
-.images{
-    flex: 50%;
 }
 .myPhoto{
     float: right;
@@ -70,21 +110,12 @@ opacity: 0.8;
 }
 
 
-.buttons a {
-    font-size: 16px;
-  }
-  .buttons a:hover {
-    cursor:pointer; 
-    font-size: 16px;
-  }
-
-
-
 #home img{
-    height: 20vh;
+    height: 37vh;
     position: fixed;
     opacity: 0.5;
-    margin-left: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
 }
 
 .home{
@@ -95,16 +126,12 @@ opacity: 0.8;
     color: teal;
 }
 
-.about{
+.aboutDiv{
     box-shadow: black;
     padding: 10px;
-    color: teal;
+    background-color: rgb(7, 105, 105);
     
 }
-
-
-
-
 .projects{
     box-shadow: black;
     padding: 2px;
@@ -112,11 +139,31 @@ opacity: 0.8;
     
 }
 
-.skills{
+.skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     box-shadow: black;
     padding: 10px;
     color: teal;
     
+}
+.child{
+    width: 100px;
+    height: auto;
+    border:  2px red solid;
+    min-height: 105px;
+
+}
+
+.tags svg{
+    height: 10px;
+}
+
+footer{
+    background-color: rgb(205, 175, 235);
+    margin: 0%;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
 }
 
 
