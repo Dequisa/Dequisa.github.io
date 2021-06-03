@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="images/favicon2-32x32.png" />
     <script defer src="style.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
     <link href="appforindex.html" />
     <link rel="stylesheet" href="websitefile.css">
 </head>
@@ -19,45 +20,59 @@
         <nav class="navBar">
             <img class="navImg" src="images/FILE 3.svg">
             <h2>Dequisa Hines</h2>
-            <ul class="navLi">
-                <li><a class="active"class="home" onclick="divVisibility('home');" href="#home">Home</a></li>
-                <li><a class="about" onclick="divVisibility('me');" href="#about">About</a></li>
-                <li><a class="projects" onclick="divVisibility('projects');" href="#projects">Projects</a></li>
-                <li><a class="skills" onclick="divVisibility('skills');" href="#skills">Skills</a></li>
-                <li><a class="contact" onclick="divVisibility('contact');" href="#contact">Contact</a></li>
-            </ul>
+            <nav class="navLi">
+                <a  id="navElement" href="#home">Home</a></li>
+                <a  id="navElement" href="#about">My Story</a></li>
+                <a  id="navElement" href="#projects">Projects</a></li>
+                <a  id="navElement" href="#skills">Skills</a></li>
+                <a  id="navElement" href="#contact">Contact</a></li>
+            </nav>
         </nav>
     </header>
     <main class="parent">
-        <div id="home">
+        <div class="homeDiv">
             <a name="home"></a>
             <h2>Welcome, I'm Quisa Hines</h2>I'm an up and coming web devloper <br>searching for my place in this
             tech explosion
-            <img class="svgImg" src="images/FILE 3.svg">
+            <!-- <img class="svgImg" src="images/FILE 3.svg"> -->
         </div>
+        <img class="svgImg" src="images/FILE 3.svg">
 
         <div class="aboutDiv">
             <a name="about"></a>
-            <h2>About Me!</h2>
-            <p> Im currently a Full Stack Web Developer student at Pursuit. Over the last several years, I've held a 3
-                tecnical titles. I started at SiriusXM Radio as an IT Support Intern. From there I went on to become a
-                provisional worker for the City Of New York, began as an Application Help Desk Specialist then worked my
-                way up to an AppleSupport Specialist providing AppleSupport for up to 10 Mayoral Agencies including DCAS
-                DoITT NYC Media, as well as others. <br> I hold serveral Tecnical certifications including: ACMT
-                certified, CCNA Certified, CompTIA A+ Network+ certified. <br>I love anything relating to Fitness. My
-                current addiction is Trap Cardio. I also enjoy biking, jogging and hiking with my family. Steven Colbert
-                is my not-so-guilty pleasure.
+            <h2>My Story!</h2>
+            <p> Im currently a Full Stack Web Developer student at Pursuit. Over the last several years, I've held 3
+                tecnical titles. I started at SiriusXM Radio as an IT Support Intern. From there I went on to become an 
+                Application Help Desk Specialist at NYC APS, from there I worked my way up to an AppleSupport Specialist providing 
+                Technical Support for up to 10 Mayoral Agencies including DCAS DoITT NYC Media, as well as others. I hold serveral 
+                Tecnical certifications including: ACMT certification, CCNA Certification, CompTIA A+ Network+ certification.
+                love anything relating to Fitness. My current addiction is Trap Cardio. I also enjoy biking, jogging and hiking with 
+                my family. Steven Colbert is my not-so-guilty pleasure.
             <img class="myPhoto" src="images/Quisa.jpg" alt="A photo of me">
         </div>
 
 
-        <div>
+        <div class="projectDiv">
             <a name="projects"><a>
             <h2>Projects</h2>
-            <p>jhgkjhgkjhgkhgkjhgkjhgjkhgkhbjkhbjkhgkjgh</p>
+            <section>
+                <a href="https://github.com/Dequisa/FSW-Text-Based-Adventure">
+                    <img class="gif" src="images/Prosperity.gif">
+                </a>
+            </section>
+            <section>
+                <a href="https://youtube-react-ddq.netlify.app/">
+                    <img class="gif" src="images/YoutubeGIF.gif">
+                </a>
+            </section>
+            <section>
+                <a href="https://dequisa-react-calculator.netlify.app">
+                    <img class="gif" src="images/calculatorProject.gif">
+                </a>
+            </section>
         </div>
 
-        <div>
+        <div class="skillDiv">
             <a name="skills"></a>
             <h2 class="skill">Skills</h2>
             <img class="child" src="images/javascript.svg">
@@ -71,36 +86,37 @@
             <img class="child" src="images/comptia-logo.svg">
         </div>
 
-        <div>
+        <div class="contactDiv">
             <a name="contact"></a>
             <h2 class="tags">Contact</h2>
-            <p>You can contact my Email: insertbusiness email here</p>
+            <p>You can learn more about me or my work by clicking on any of the friendly links below</p>
             <a href="https://www.linkedin.com/in/dequisa">
-                <svg role="img" viewBox="0 0 24 24" fill="none"
+                <svg class="icon1" role="img" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2">
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                     </path>
                     <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
+                    <circle cx="4" cy="4" r="1"></circle>
                 </svg></a>
 
             <a href="https://github.com/joinpursuit/Pursuit-Core-Web">
-                <svg role="img" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
+                <svg class="icon2" role="img" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1">
                     <path
                     d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
                     </path>
-                </svg></a>
+                </svg>
+            </a>
 
             <a href="https://www.instagram.com/">
-                <svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                <svg  class="icon3" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg></a>
             <a href="https://codepen.io/Quisa">
-                <svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                <svg class="icon4"role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2">
                     <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
                     <line x1="12" y1="22" x2="12" y2="15.5"></line>
@@ -108,6 +124,21 @@
                     <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
                     <line x1="12" y1="2" x2="12" y2="8.5"></line>
                 </svg></a>
+                <label class="note">You can also leave me a note!<br>
+                    <textarea class="note" id="comment" name="comment" rows="5"></textarea>
+                </label>
+            <ul id="noteList">
+                <li>First Note Here</li>
+               
+            </ul>
+
+            <script>
+                ScrollReveal().reveal('.homeDiv');
+                ScrollReveal().reveal('.aboutDiv');
+                ScrollReveal().reveal('.projectDiv');
+                ScrollReveal().reveal('.skillDiv');
+                ScrollReveal().reveal('.contactDiv');
+            </script>
         </div>
     </main>
     <footer>

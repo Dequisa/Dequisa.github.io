@@ -5,27 +5,24 @@ body{
 header{
     position: relative;
 }
+main{
+    display: flex;
+}
 .navBar{
-    position: -webkit-sticky;
-    display: block;
-   position: relative;
-   height: 16.0vh;
-    top: 0;
+    display: flex;
+    height: 15.0vh;
     background-color: rgb(205, 175, 235);
    margin: 0%;
    border-top: 1px black solid;
    border-bottom: 1px black solid;
-   padding-left: 0%;  
 }
 .navLi{
-    position: fixed;
+   position: fixed;
    box-shadow: black;
-   width: 76%;
-   display: inline;
-   margin-top: 0%;
-   font-size: 21px;
+   display: flex;
+   margin-left: 60%;
+   margin-top: 2%;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   list-style: none;
 }
 .navBar h2{
     /* display: inline; */
@@ -37,20 +34,30 @@ header{
     font-size: 40px;
     
 }
+
+#navElement{
+ display: block;
+ flex-wrap: nowrap;
+ align-items: flex-end;
+ /* justify-content: space-evenly; */
+ /* box-shadow: black; */
+ padding: 13px;
+ font-size: 23px;
+ margin-left: 0%;
+ color:rebeccapurple;
+}
 li{
-    display: inline;
+    /* display: inline; */
     padding: 3%;
     padding-bottom: 3%;
     float: right;
 }
 .navImg{
-    /* position: fixed; */
-    top: 0%;
     left: 0%;
     width: 20vw;
     height: auto;
     display: inline;
-    padding-top: 15;
+    padding-top: 5px;
     z-index: 0;
     margin-top: -4.6%;
     margin-left: -3%;
@@ -62,35 +69,22 @@ li{
 .parent{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
     justify-content: space-evenly;
     width: 70%;
     height: 70%;
 }
-div{
-    display: block;
-    border: 3px black solid;
-    width: 50%;
-}
+
 .svgImg{
-opacity: 0.8;
-margin-left: 20%;
+opacity: 0.76;
+position: fixed;
+top: 25%;
+left: 55%;
+
+width: 100vh;
 }
 
-#home{
-    border: 2px black solid;
-    width: 50%;
-    display: block;
-    background-color: teal;
-    background-size: 77%;
-    background-position: left;
-    color: black;
-    font-size: 18px;
-    height: auto;
-    
-   
-}
 .myPhoto{
     float: right;
     margin-top: 7%;
@@ -118,30 +112,17 @@ margin-left: 20%;
     margin-top: 5%;
 }
 
-.home{
-    box-shadow: black;
-    padding: 10px;
-    font-size: 10px;
-    margin-left: 30%;
-    color: teal;
-}
-
 .aboutDiv{
     box-shadow: black;
     padding: 10px;
     background-color: rgb(7, 105, 105);
     
 }
-.projects{
-    box-shadow: black;
-    padding: 2px;
-    color: teal;
-    
-}
+
 
 .skill{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 105px 105px 105px;
     box-shadow: black;
     padding: 10px;
     color: teal;
@@ -152,6 +133,7 @@ margin-left: 20%;
     height: auto;
     border:  2px red solid;
     min-height: 105px;
+    gap: 10%;
 
 }
 
@@ -166,5 +148,38 @@ footer{
     border-bottom: 1px black solid;
 }
 
+.note{
+    margin-left: 30%;
+}
 
+.gif{
+    width: 25vw;
+}
+
+div{
+    background-color: rgb(7, 105, 105);
+    width: 40vw;
+    height: 80vh;
+}
+
+.icon1{
+   height: 40px;
+   margin-left: 140px;
+}
+.icon2{
+    height: 40px;
+   margin-left: 25px;
+ }
+ .icon3{
+    height: 40px;
+    margin-left: 25px;
+ }
+ .icon4{
+    height: 40px;
+    margin-left: 25px;
+ }
+
+ label{
+     margin-top: 150px;
+ }
 
