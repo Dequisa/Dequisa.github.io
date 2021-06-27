@@ -39,7 +39,7 @@ header{
  flex-wrap: nowrap;
  align-items: flex-end;
  padding: 13px;
- font-size: 1px;
+ font-size: 20px;
  margin-left: 0%;
  color:rebeccapurple;
 }
@@ -182,7 +182,7 @@ li{
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
    
     body{
         margin: 0%;
@@ -363,4 +363,4 @@ li{
         color: white;
         text-align: center;
     }
-}
+} */
